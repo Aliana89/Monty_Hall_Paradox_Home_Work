@@ -19,7 +19,7 @@ public class GameWithRiskTest extends BaseGameTest {
 
     @ParameterizedTest
     @MethodSource("doorChoiceProvider")
-    void WinLossBasedOnChoice(int doorIndex, boolean expectedResult) {
+    void winLossBasedOnChoice(int doorIndex, boolean expectedResult) {
         Player player = new Player("Игрок", true);
         Game game = new Game(player, doors);
 

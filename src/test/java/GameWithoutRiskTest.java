@@ -10,7 +10,7 @@ public class GameWithoutRiskTest extends BaseGameTest {
 
 
     @Test
-    void shouldWinWhenChoosingPrizeDoor() {
+    void winWhenChoosingPrizeDoor() {
         Player player = new Player("Игрок", false);
         Game game = new Game(player, doors);
 
@@ -20,7 +20,7 @@ public class GameWithoutRiskTest extends BaseGameTest {
     }
 
     @Test
-    void shouldLoseWhenChoosingNonPrizeDoor() {
+    void loseWhenChoosingNonPrizeDoor() {
         Player player = new Player("Игрок", false);
         Game game = new Game(player, doors);
 
